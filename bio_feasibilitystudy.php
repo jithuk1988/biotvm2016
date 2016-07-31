@@ -362,7 +362,7 @@ if (isset($_POST['submit'])) {
                 
                 }
                 $result1_payment=DB_query($sql_payment, $db);
-                $adv=DB_Last_Insert_ID(&$Conn,'bio_advance','adv_id'); 
+                $adv=DB_Last_Insert_ID($Conn,'bio_advance','adv_id'); 
          
                 $sql_lead="UPDATE bio_leads
                         SET leadstatus=3

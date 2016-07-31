@@ -21,7 +21,7 @@
                                          '".$quantity."',
                                          '".$price."')";
       $result_sub1 = DB_query($sql_sub1,$db);
-      $tempflg=DB_Last_Insert_ID(&$Conn,'bio_subassemblytemp','temp_id');        
+      $tempflg=DB_Last_Insert_ID($Conn,'bio_subassemblytemp','temp_id');        
       echo"<input type='hidden' id='subtempid' value='".$tempflg."'>";
       
       echo"<table  style='width:75%;' border=0>";

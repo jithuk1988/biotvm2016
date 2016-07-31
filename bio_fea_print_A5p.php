@@ -271,7 +271,7 @@ echo '<div class="page_help_text">' . _('Use this report to display the quantity
 
 } /*end of else not PrintPDF */
 
-function PrintHeader(&$pdf,&$YPos,&$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
+function PrintHeader($pdf,$YPos,$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
                      $Page_Width,$Right_Margin,$CatDescription) {
 
     /*PDF page header for Reorder Level report */
