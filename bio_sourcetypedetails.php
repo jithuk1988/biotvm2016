@@ -120,7 +120,7 @@ $sql="INSERT INTO bio_feedtemp(bio_feedtemp.feedstockid,bio_feedtemp.weight
            $Dbgmsg =  _('The SQL used to insert the Sales Leads record was');
            $result = DB_query($sql,$db,$ErrMsg,$DbgMsg);
 //  prnMsg( _('The Feedstock record has been added'),'success');  
-   $tempflg=DB_Last_Insert_ID(&$Conn,'bio_feedtemp','temp_id');        
+   $tempflg=DB_Last_Insert_ID($Conn,'bio_feedtemp','temp_id');        
 echo"<input type='hidden' id='hidenfeedstock' value='".$tempflg."'>";
 
 echo"<table  style='width:65%;' border=0><tr style='background:#D50000;color:white'><td>Slno</td><td>Feed Stock</td><td>Weight</td></tr>";

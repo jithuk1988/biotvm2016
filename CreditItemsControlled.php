@@ -49,7 +49,7 @@ if (!isset($_SESSION['CreditItems'])) {
 
 
 /*Save some typing by referring to the line item class object in short form */
-$LineItem = &$_SESSION['CreditItems']->LineItems[$LineNo];
+$LineItem = $_SESSION['CreditItems']->LineItems[$LineNo];
 
 //Make sure this item is really controlled
 if ( $LineItem->Controlled != 1 ){

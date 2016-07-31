@@ -36,7 +36,7 @@ if (!isset($_SESSION['Items']) OR !isset($_SESSION['ProcessingOrder'])) {
 
 
 /*Save some typing by referring to the line item class object in short form */
-$LineItem = &$_SESSION['Items']->LineItems[$LineNo];
+$LineItem = $_SESSION['Items']->LineItems[$LineNo];
 
 
 //Make sure this item is really controlled

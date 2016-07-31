@@ -324,7 +324,7 @@ DB_query($temptable,$db);
   prnMsg( _('The Sales Leads record has been added'),'success');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
      //exit;
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------     
- $custid=DB_Last_Insert_ID(&$Conn,'bio_feedtemp','temp_id'); 
+ $custid=DB_Last_Insert_ID($Conn,'bio_feedtemp','temp_id'); 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
       $sql="INSERT INTO `bio_leads` (
     `leaddate`, 
@@ -348,7 +348,7 @@ DB_query($temptable,$db);
            $result = DB_query($sql,$db,$ErrMsg,$DbgMsg);
   prnMsg( _('The Sales Leads record has been added'),'success');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
      //exit;                                                                                                  
- $custid=DB_Last_Insert_ID(&$Conn,'bio_feedtemp','temp_id');      
+ $custid=DB_Last_Insert_ID($Conn,'bio_feedtemp','temp_id');      
 $sql="INSERT INTO bio_leadfeedstocks(SELECT $custid,bio_feedtemp.feedstockid,bio_feedtemp.weight FROM bio_feedtemp)";
 $result1=DB_query($sql, $db);   
  $tempdrop="DROP TABLE IF EXISTS bio_feedtemp";

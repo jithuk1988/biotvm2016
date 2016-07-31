@@ -27,7 +27,7 @@
                                          '".$number."')";
       $result_sub1 = DB_query($sql_sub1,$db);
       
-      $tempflg=DB_Last_Insert_ID(&$Conn,'bio_schedule_temp','temp_schedule_id');        
+      $tempflg=DB_Last_Insert_ID($Conn,'bio_schedule_temp','temp_schedule_id');        
       echo"<input type='hidden' id='subtempid' value='".$tempflg."'>";
       } 
       echo"<table  style='width:65%;' border=0>";

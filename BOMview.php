@@ -202,7 +202,7 @@ WHERE `stockid` ='".$SelectedParent."'";
 // ----------------------------------------------------------------------------------
 
 }    
-function display_children($parent, $level, &$BOMTree) {
+function display_children($parent, $level, $BOMTree) {
 
     global $db;
     global $i;
