@@ -138,7 +138,7 @@
     $pdf->OutputD($_SESSION['DatabaseName'] . '_Concept Proposal_' . Date('Y-m-d') . '.pdf');
     $pdf->__destruct();
     
-        function PrintHeader(&$pdf,&$YPos,&$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
+        function PrintHeader($pdf,$YPos,$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
                      $Page_Width,$Right_Margin,$CatDescription) {
                          
           if ($PageNumber>1){

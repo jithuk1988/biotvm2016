@@ -46,7 +46,7 @@ include('includes/session.inc');
 
 
   
-function customerCodeGenaration(&$enquirytype,&$db)
+function customerCodeGenaration($enquirytype,$db)
 {
     if($enquirytype==1){
         $type="D";
