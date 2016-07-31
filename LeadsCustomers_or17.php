@@ -1469,7 +1469,7 @@ if($LSGtypeid!=null){
 } // end of main ifs
 
 
-function customerCodeGenaration(&$enquirytype,&$db)
+function customerCodeGenaration($enquirytype,$db)
 {
     if($enquirytype==1){
         $type="D";

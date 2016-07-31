@@ -129,7 +129,7 @@ exit();
  *  @param $ok	  The variable where the routine gives the validation result.
  *  @return		 The Label object constructed qith the data, included errors.
  */
-function getData($data, $new, &$ok) {
+function getData($data, $new, $ok) {
 	$ok = validData($data, $new);
 	return newLabel($data);
 }

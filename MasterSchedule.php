@@ -358,7 +358,7 @@ if(isset($_POST['save']))       {
    submit($db,$StockID,$DemandID);
 
 }                
-function submit(&$db,&$StockID,&$DemandID)      {//####SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT####
+function submit($db,$StockID,$DemandID)      {//####SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT_SUBMIT####
 
 // In this section if hit submit button. Do edit checks. If all checks pass, see if record already
 // exists for StockID/Duedate/MRPDemandtype combo; that means do an Update, otherwise, do INSERT.
@@ -430,7 +430,7 @@ $statusid=$_POST['statusid'];
          
 //display($db,$StockID,$DemandID);
 } // End of function submit()
-function delete(&$db,$DemandID,$demandtype,$StockID) 
+function delete($db,$DemandID,$demandtype,$StockID) 
 {
     // ####DELETE_DELETE_DELETE_DELETE_DELETE_DELETE_####
     // If wanted to have a Confirm routine before did actually deletion, could check if

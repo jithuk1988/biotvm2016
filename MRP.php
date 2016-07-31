@@ -588,7 +588,7 @@ if (isset($_POST['submit'])) {
 
 
 
-function LevelNetting(&$db,$part,$eoq,$pansize,$shrinkfactor) {
+function LevelNetting($db,$part,$eoq,$pansize,$shrinkfactor) {
 // Create an array of mrprequirements and an array of mrpsupplies, then read through
 // them seeing if all requirements are covered by supplies. Create a planned order
 // for any unmet requirements. Change dates if necessary for the supplies.
@@ -755,7 +755,7 @@ function LevelNetting(&$db,$part,$eoq,$pansize,$shrinkfactor) {
 
 } // End of LevelNetting -------------------------------------------------------
 
-function CreateLowerLevelRequirement(&$db,
+function CreateLowerLevelRequirement($db,
 									$toppart,
 									$topdate,
 									$topquantity,
