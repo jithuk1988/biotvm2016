@@ -56,7 +56,7 @@ $sql1="select
     
     $pdf->OutputD($_SESSION['DatabaseName'] . '_Reminder letter for inactive CP_' . Date('Y-m-d') . '.pdf');
     $pdf->__destruct();
-    function PrintHeader(&$pdf,&$YPos,&$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
+    function PrintHeader($pdf,$YPos,$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
                      $Page_Width,$Right_Margin,$CatDescription) {
                          
     //-----------------------------------------------------------------------------------//

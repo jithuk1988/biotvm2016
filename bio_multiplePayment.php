@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
     
     
    
-   $adv=DB_Last_Insert_ID(&$Conn,'bio_advance','adv_id'); 
+   $adv=DB_Last_Insert_ID($Conn,'bio_advance','adv_id'); 
    $_SESSION['adv_id']=$adv;
    $_SESSION['lead']=$lead_ID;
    

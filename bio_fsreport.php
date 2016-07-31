@@ -149,7 +149,7 @@ $pdf->newPage();
     $pdf->__destruct();
     
    //
-    function PrintHeader(&$pdf,&$YPos,&$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
+    function PrintHeader($pdf,$YPos,$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
                      $Page_Width,$Right_Margin,$CatDescription) {
   
   

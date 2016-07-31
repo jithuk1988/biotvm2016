@@ -123,7 +123,7 @@ from bio_proposal,bio_leads where bio_proposal.leadid=bio_leads.leadid
     $pdf->__destruct();
    }   
    //
-    function PrintHeader(&$pdf,&$YPos,&$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
+    function PrintHeader($pdf,$YPos,$PageNumber,$Page_Height,$Top_Margin,$Left_Margin,
                      $Page_Width,$Right_Margin,$CatDescription) {
   
   

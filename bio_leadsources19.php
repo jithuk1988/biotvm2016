@@ -215,7 +215,7 @@ if (isset($_POST['submit'])) {
              $myrow1=DB_fetch_array($result1);
              $sid=$myrow1[0];
             // echo $sid;
-             $sid=DB_Last_Insert_ID(&$Conn,'bio_feedtemp','temp_id');
+             $sid=DB_Last_Insert_ID($Conn,'bio_feedtemp','temp_id');
              $stypeid1=$_SESSION['stypeid']; 
                 foreach ($_POST as $key => $value) 
                 {   
